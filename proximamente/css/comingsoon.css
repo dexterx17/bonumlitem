@@ -33,8 +33,29 @@ Globals
 --------------------*/
 /*
  * Base structure
+ *
+ *@import url("https://fonts.googleapis.com/css?family=Abril+Fatface");
  */
-@import url("https://fonts.googleapis.com/css?family=Abril+Fatface");
+
+@font-face {
+    font-family: Squalo-Regular;
+    src: url(../fonts/Squalo-Regular.otf);
+}
+
+@font-face {
+    font-family: Squalo-Regular-Italic;
+    src: url(../fonts/Squalo-RegularItalic.otf);
+}
+
+@font-face {
+    font-family: Squalo-Light-Italic;
+    src: url(../fonts/Squalo-LightItalic.otf);
+}
+
+@font-face {
+    font-family: Squalo-Somibold-Italic;
+    src: url(../fonts/Squalo-SemiboldItalic.otf);
+}
 
 body {
     color: #fff;
@@ -82,8 +103,17 @@ Slide Cover
 
 .slide-cover h1 {
     font-size: 44px;
-    font-family: "Open Sans", Arial, sans-serif;
+    font-weight: 100;
+    font-family: "Squalo-Light-Italic", Arial, sans-serif;
     text-transform: capitalize;
+    color: #dbb96f;
+    line-height: 55px;
+    letter-spacing: 0.02em;
+}
+
+.slide-cover h2 {
+    font-size: 40px;
+    font-family: "Squalo-Light-Italic", Arial, sans-serif;
     line-height: 55px;
     letter-spacing: -0.009em;
 }
@@ -352,16 +382,21 @@ countdown timer
 }
 
 .countdown .countdown_timer li span.time {
+    font-family: "Squalo-Regular", Arial, sans-serif;    
     font-size: 40px;
     font-weight: 100;
     line-height: 1em;
-    color: #FFFFFF;
+    background-color: rgba(255,255,255);
+    letter-spacing: 0.1rem;
+    padding:5px;
+    color: #000;
 }
 
 .countdown .countdown_timer li span.meta {
     margin-top: 10px;
     text-transform: uppercase;
-    color: #FFFFFF;
+    font-family: "Squalo-Light-Italic", Arial, sans-serif;
+    color: #e8c27e;
     font-size: 0.8em;
     font-weight: 100;
 }
@@ -525,7 +560,7 @@ social icon
 }
 
 .social-icon .--icon {
-    color: white;
+    color: #03273f;
     position: relative;
     width: 50px;
     height: 50px;
@@ -547,19 +582,19 @@ social icon
 }
 
 .social-icon .--icon.--color.--facebook::before {
-    background-color: #3B5898;
+    background-color: #fff;
 }
 
 .social-icon .--icon.--color.--twitter::before {
-    background-color: #55acee;
+    background-color: #fff;
 }
 
 .social-icon .--icon.--color.--pinterest::before {
-    background-color: #cb2027;
+    background-color: #fff;
 }
 
 .social-icon .--icon.--color.--youtube::before {
-    background-color: #bb0000;
+    background-color: #fff;
 }
 
 .social-icon .--icon::before {
@@ -4735,4 +4770,10 @@ Preview Landingpage
     .homepage .jumbotron {
         height: auto;
     }
+}
+
+
+.construyendo{
+    font-family: "Squalo-Regular-Italic", Arial, sans-serif;
+    color: #e8c27e;
 }

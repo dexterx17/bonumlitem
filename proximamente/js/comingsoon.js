@@ -1,15 +1,15 @@
-$('.countdown').countdown('2017/12/12', function(event) {
+$('.countdown').countdown('2021/09/30', function(event) {
   jQuery(this).html(event.strftime('<ul class="countdown_timer">' + '<li><span class="time"> %D </span><span class="meta"> days </span></li>' + '<li><span class="time"> %H </span><span class="meta"> Hours </span></li>' + '<li><span class="time"> %M </span><span class="meta"> Mins </span></li>' + '<li><span class="time"> %S </span><span class="meta"> Second </span></li>' + '</ul>'));
 });
 
 $(document).ready(function() {
-  $('.slide-cover,.-slide-basic').slick({
-    vertical: true,
-    autoplay: true,
-    arrows: false,
-    autoplaySpeed: 3000,
-    verticalSwiping: true
-  });
+  // $('.slide-cover,.-slide-basic').slick({
+  //   vertical: true,
+  //   autoplay: true,
+  //   arrows: false,
+  //   autoplaySpeed: 3000,
+  //   verticalSwiping: true
+  // });
   $('.slide-h').slick({
     autoplay: true,
     arrows: true,
